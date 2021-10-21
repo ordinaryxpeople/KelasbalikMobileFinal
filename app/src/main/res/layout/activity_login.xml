@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivLogoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/llLayoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.libizo.CustomEditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="NIS"
+            android:inputType="text"
+            android:textAlignment="center"
+            app:libIZO_clearIconTint="#8f1f15"
+            app:libIZO_setBackgroundColor="#ffffff"
+            app:libIZO_setBorderView="true"
+            app:libIZO_setClearIconVisible="true"
+            app:libIZO_setCornerRadius="50dp"
+            app:libIZO_setPrefixTextColor="#FF4081"
+            app:libIZO_setStrokeWidth="0dp" />
+
+        <com.libizo.CustomEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            app:libIZO_clearIconTint="#8f1f15"
+            app:libIZO_setBackgroundColor="#ffffff"
+            app:libIZO_setBorderView="true"
+            app:libIZO_setClearIconVisible="true"
+            app:libIZO_setCornerRadius="50dp"
+            app:libIZO_setPrefixTextColor="#FF4081"
+            app:libIZO_setStrokeWidth="0dp" />
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            app:nb_backgroundColor="#58BAFF"
+            app:nb_focusColor="#B83CC3"
+            app:nb_radius="50dp"
+            app:nb_text="Login"
+            app:nb_textColor="#FFF"
+            app:nb_textSize="16dp"
+            app:nb_textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTopFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="KelasBalik Mobile"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvBottomFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ver 2.0"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBF1F7"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frBg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <io.github.florent37.shapeofview.shapes.ArcView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:shape_arc_height="30dp"
+            app:shape_arc_position="bottom">
+
+            <ImageView
+                android:id="@+id/ivBgblue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#698FDC" />
+
+            <ImageView
+                android:id="@+id/ivBgPattern"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:alpha="0.2"
+                android:background="@drawable/bg_hero" />
+
+        </io.github.florent37.shapeofview.shapes.ArcView>
+
+        <FrameLayout
+            android:id="@+id/frMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <!--    <com.etebarian.meowbottomnavigation.MeowBottomNavigation-->
+    <!--        android:id="@+id/bnvMain"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:mbn_backgroundBottomColor="#6495ED"-->
+    <!--        app:mbn_circleColor="#6495ED"-->
+    <!--        app:mbn_countBackgroundColor="#ff6f00"-->
+    <!--        app:mbn_countTextColor="#ffffff"-->
+    <!--        app:mbn_defaultIconColor="#ffffff"-->
+    <!--        app:mbn_rippleColor="#2f424242"-->
+    <!--        app:mbn_selectedIconColor="#ffffff"-->
+    <!--        app:mbn_shadowColor="#1f212121">-->
+
+    <!--    </com.etebarian.meowbottomnavigation.MeowBottomNavigation>-->
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bnvMain"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:backgroundColor="#698FDC"
+        app:iconSize="24dp"
+        app:iconTint="#EBF1F7"
+        app:iconTintActive="#698FDC"
+        app:indicatorColor="#EBF1F7"
+        app:menu="@menu/menu"
+        app:textColor="#698FDC"
+        app:textSize="16dp" />
+
+
+</LinearLayout>

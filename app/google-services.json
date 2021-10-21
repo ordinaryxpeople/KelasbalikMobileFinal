@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "799368738248",
+    "project_id": "kelasbalikmobile",
+    "storage_bucket": "kelasbalikmobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799368738248:android:eda5454b0cd565fe44bcfd",
+        "android_client_info": {
+          "package_name": "com.kelasbalik.kelasbalikmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799368738248-0e8lltmcd9vkg9s0irt3du2jb879ild5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2e7qPCfMgUs4S_slxX1YjB-qnmXr56A4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799368738248-0e8lltmcd9vkg9s0irt3du2jb879ild5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
